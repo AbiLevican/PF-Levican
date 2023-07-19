@@ -1,0 +1,77 @@
+// import de utilidades
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+
+/* HISTORIA*/
+
+/*header historia*/
+
+header{
+    .header-historia{
+        @extend %estilos-header;
+
+        h1{
+            @extend %estilos-titulo;
+        }
+
+        h2{
+            @extend %estilos-subtitulos-generales;
+        }
+    }
+}
+
+/*main historia*/
+main{
+    .main-historia-derecha{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        justify-items: center;
+        align-items: center;
+        padding: 5px; 
+        margin: 15px;
+
+        .carusel-desaparecer{
+            display: none
+        }
+
+        .texto-historia{
+            @include texto-historia;
+        }
+    }
+
+    .main-historia-izquierda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 26% 72%;
+        justify-items: center;
+        align-items: center;
+        padding: 5px;
+        margin: 15px;
+
+
+        .texto-historia{
+            @include texto-historia;
+        }       
+    } 
+
+    .texto-historia-final{
+        font-family:  $fuente-principal;
+        color: nth($colores-principales, 8 );
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

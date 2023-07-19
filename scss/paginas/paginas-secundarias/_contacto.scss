@@ -1,0 +1,38 @@
+// import de utilidades
+@import "../../utilidades/extend";
+@import "../../utilidades/listas";
+@import "../../utilidades/mixin";
+@import "../../utilidades/variables";
+
+/*CONTACTO*/
+
+/*header*/
+
+header{
+    .header-contacto{
+        @extend %estilos-header;
+
+        h1{
+            @extend %estilos-titulo;
+        }
+    }
+}
+
+/*main*/
+main{
+    .main-contacto{
+        padding: 50px 10px 120px 10px;
+        font-family: $fuente-principal;
+
+        .boton-mail{
+            @include propiedades-boton;
+        }
+
+        .boton-wpp{
+            @include propiedades-boton;
+        }
+    }
+}
+
+
+

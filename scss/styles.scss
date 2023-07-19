@@ -1,0 +1,24 @@
+/*reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORT PÁGINAS PRINCIPALES
+
+@import "paginas/index";
+@import "paginas/comodidades";
+@import "paginas/historia";
+@import "paginas/destinos";
+@import "paginas/reservas";
+
+// IMPORT PÁGINAS SECUNDARIAS
+
+@import "paginas/paginas-secundarias/paginas-secundarias-destinos";
+@import "paginas/paginas-secundarias/politica-privacidad";
+@import "paginas/paginas-secundarias/contacto";
+
+// IMPORT DE MEDIA QUERIES
+@import "media-queries/media-queries"
+

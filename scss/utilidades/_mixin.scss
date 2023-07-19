@@ -1,0 +1,14 @@
+// MIXIN
+@import "variables.scss";
+
+@mixin texto-historia{
+    font-family: $fuente-principal;
+    text-align: center;
+}
+
+@mixin propiedades-boton{
+    text-decoration: underline;
+    font-style: italic; 
+    color: nth($colores-principales, 6 );
+    font-size: 20px;  
+}

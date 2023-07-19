@@ -1,0 +1,67 @@
+// import de utilidades
+@import "../utilidades/extend";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*RESERVAS*/
+
+/*header reservas*/
+header{
+    .header-reservas{
+        @extend %estilos-header;
+
+        h1{
+            @extend %estilos-titulo;
+        }
+
+        h2{
+            @extend %estilos-subtitulos-generales;
+        }
+    }
+}
+
+/*main reservas*/
+main{
+        .texto-izquierda-reservas{
+            font-family: $fuente-principal;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.5fr;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+            align-items: center;
+
+        .img-reservas{
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            width: 100%;
+        }
+
+        .carusel-desaparecer{
+            display: none;
+        }
+    }
+    
+    .texto-derecha-reservas{
+        font-family:$fuente-principal;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 0.5f;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+        align-items: center;
+
+        .img-reservas{
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            width: 100%;
+        }
+
+        .carusel-desaparecer{
+            display: none;
+        }
+    }
+}

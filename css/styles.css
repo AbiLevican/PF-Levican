@@ -1,0 +1,914 @@
+@charset "UTF-8";
+/*reseteo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* INDEX*/
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*header*/
+header nav .menu-principal {
+  display: none; }
+
+header nav .menu-mobile {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #323315;
+  margin-bottom: 0px;
+  padding: 13px;
+  font-family: "Noto Serif", serif; }
+  header nav .menu-mobile li {
+    height: 100%;
+    width: 100%;
+    text-align: start; }
+  header nav .menu-mobile a {
+    font-size: 17px;
+    color: #cfaa87c0;
+    text-decoration: none;
+    text-align: start; }
+  header nav .menu-mobile a:hover {
+    text-decoration: underline;
+    color: #9C5840; }
+  header nav .menu-mobile .menu-desplegable {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #323315;
+    margin-bottom: 0px;
+    padding: 13px;
+    font-family: "Noto Serif", serif; }
+  header nav .menu-mobile li:hover .menu-desplegable {
+    display: block; }
+
+header #principal-index {
+  background-color: #cfaa87c0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 50% 25%;
+  justify-items: center;
+  align-items: center;
+  font-family: "Noto Serif", serif; }
+  header #principal-index img {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100%; }
+  header #principal-index #titulo-uno {
+    padding: 45px 0px 20px 0px; }
+
+/* main del index */
+.main-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 25%);
+  justify-items: center;
+  align-items: center; }
+  .main-index #duenios {
+    text-align: center;
+    font-size: 18px;
+    color: #323315;
+    font-family: "Noto Serif", serif; }
+  .main-index .img-principal div div .fotos-principales {
+    width: 100%; }
+  .main-index .box-email {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    background-color: #9C5840;
+    padding: 20px 25px 20px 25px;
+    gap: 5px;
+    justify-content: center; }
+    .main-index .box-email .box-email-text {
+      color: #cfaa87;
+      font-size: 20px;
+      text-align: center;
+      font-family: "Noto Serif", serif; }
+    .main-index .box-email .espacio-email-box {
+      color: #323315;
+      font-family: "Noto Serif", serif;
+      padding: 5px 10px 5px 10px; }
+    .main-index .box-email .boton-email-box {
+      background-color: #323315;
+      border: 0px;
+      padding: 10px 0px 10px 0px;
+      margin: 10px 30px 20px 30px;
+      font-family: "Noto Serif", serif;
+      color: #b69c64; }
+    .main-index .box-email .boton-email-box:hover {
+      text-decoration: underline;
+      background-color: #3a2509; }
+  .main-index section p {
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Noto Serif", serif;
+    padding: 5px; }
+
+/*footer*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 50% 25%;
+  background-color: #323315;
+  font-family: "Noto Serif", serif; }
+  footer .menu-final {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    padding: 14px; }
+    footer .menu-final a {
+      color: #b69c64;
+      text-decoration: none;
+      text-align: center;
+      font-size: 12px; }
+    footer .menu-final a:hover {
+      text-decoration: underline;
+      color: #cfaa87; }
+  footer .mensaje-fin {
+    padding: 60px 0px 60px 0px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 37px; }
+  footer .mensaje-copyright {
+    color: whitesmoke;
+    text-align: center;
+    padding: 0px 0px 50px 0px; }
+
+/*COMODIDADES*/
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*header comodidades*/
+/*main comodidades*/
+.main-comodidades {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 8) repeat(0.5fr, 2);
+  gap: 10px;
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between; }
+  .main-comodidades .img-comodidades {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    padding: 5px;
+    height: 250px;
+    width: 200px; }
+  .main-comodidades .carusel-desaparecer {
+    display: none; }
+  .main-comodidades .texto-comodidades {
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    padding: 5px; }
+  .main-comodidades .texto-comodidades-final {
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    color: #606C38; }
+  .main-comodidades .box-email-comodidades {
+    background-color: #b69c64;
+    border: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px 40px 10px 40px;
+    margin: 20px;
+    justify-self: center; }
+    .main-comodidades .box-email-comodidades .box-email-espacio-comodidades {
+      color: #323315;
+      font-family: "Noto Serif", serif;
+      padding: 5px;
+      margin: 3px; }
+    .main-comodidades .box-email-comodidades .box-email-boton-comodidades {
+      background-color: #323315;
+      border: 0px;
+      padding: 10px;
+      margin: 3px 70px 3px 70px;
+      font-family: "Noto Serif", serif;
+      color: #b69c64; }
+    .main-comodidades .box-email-comodidades .box-email-boton-comodidades:hover {
+      text-decoration: underline; }
+
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/* HISTORIA*/
+/*header historia*/
+/*main historia*/
+main .main-historia-derecha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  margin: 15px; }
+  main .main-historia-derecha .carusel-desaparecer {
+    display: none; }
+  main .main-historia-derecha .texto-historia {
+    font-family: "Noto Serif", serif;
+    text-align: center; }
+
+main .main-historia-izquierda {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 26% 72%;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  margin: 15px; }
+  main .main-historia-izquierda .texto-historia {
+    font-family: "Noto Serif", serif;
+    text-align: center; }
+
+main .texto-historia-final {
+  font-family: "Noto Serif", serif;
+  color: #606C38;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px; }
+
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*DESTINOS*/
+/*header*/
+/*main destinos*/
+.main-destinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr); }
+  .main-destinos .secciones-destinos .contenedor-destinos img {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply; }
+  .main-destinos .secciones-destinos .contenedor-destinos p {
+    font-family: "Noto Serif", serif;
+    margin: 30px 5px 10px 5px; }
+  .main-destinos .secciones-destinos .resaltador {
+    background-color: #9C5840;
+    color: #cfaa87;
+    font-size: 22px;
+    font-family: "Noto Serif", serif;
+    padding: 30px; }
+  .main-destinos .secciones-destinos .boton-mas-info {
+    text-decoration: none;
+    color: #cfaa87;
+    background-color: #323315;
+    margin: 10px;
+    padding: 20px;
+    font-family: "Noto Serif", serif; }
+  .main-destinos .secciones-destinos .boton-mas-info:hover {
+    text-decoration: underline; }
+
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*RESERVAS*/
+/*header reservas*/
+/*main reservas*/
+main .texto-izquierda-reservas {
+  font-family: "Noto Serif", serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  align-items: center; }
+  main .texto-izquierda-reservas .img-reservas {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100%; }
+  main .texto-izquierda-reservas .carusel-desaparecer {
+    display: none; }
+
+main .texto-derecha-reservas {
+  font-family: "Noto Serif", serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 0.5f;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  align-items: center; }
+  main .texto-derecha-reservas .img-reservas {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100%; }
+  main .texto-derecha-reservas .carusel-desaparecer {
+    display: none; }
+
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*PAGINAS SECUNDARIAS VIAJES*/
+/*header*/
+header nav .menu-principal-destinos {
+  display: none; }
+
+header nav .menu-mobile {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #323315;
+  margin-bottom: 0px;
+  padding: 13px;
+  font-family: "Noto Serif", serif; }
+  header nav .menu-mobile li {
+    height: 100%;
+    width: 100%;
+    text-align: start; }
+    header nav .menu-mobile li a {
+      font-size: 17px;
+      color: #cfaa87c0;
+      text-decoration: none;
+      text-align: start; }
+    header nav .menu-mobile li .resaltaboton {
+      color: #9C5840; }
+    header nav .menu-mobile li a:hover {
+      text-decoration: underline;
+      color: #9C5840; }
+  header nav .menu-mobile .menu-desplegable {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #323315;
+    margin-bottom: 0px;
+    padding: 13px;
+    font-family: "Noto Serif", serif; }
+  header nav .menu-mobile li:hover .menu-desplegable {
+    display: block; }
+
+/*main*/
+.main-pag-sec-destinos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0,5fr;
+  gap: 10px;
+  justify-items: center;
+  align-content: center; }
+  .main-pag-sec-destinos section h3 {
+    font-family: "Noto Serif", serif;
+    color: #9C5840;
+    margin: 20px;
+    font-size: 25px; }
+  .main-pag-sec-destinos section form .busca-semana {
+    background-color: #9C5840;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border: 0px; }
+    .main-pag-sec-destinos section form .busca-semana .espacio-busca-semana {
+      color: #606C38;
+      background-color: whitesmoke;
+      font-family: "Noto Serif", serif;
+      padding: 5px;
+      margin: 3px;
+      border: 0px; }
+    .main-pag-sec-destinos section form .busca-semana .boton-busca-semana {
+      background-color: #323315;
+      border: 0px;
+      padding: 10px;
+      margin: 3px 70px 3px 70px;
+      font-family: "Noto Serif", serif;
+      color: #b69c64; }
+    .main-pag-sec-destinos section form .busca-semana .boton-busca-semana:hover {
+      text-decoration: underline; }
+  .main-pag-sec-destinos section p {
+    font-family: "Noto Serif", serif;
+    margin: 20px; }
+    .main-pag-sec-destinos section p .boton-wpp {
+      text-decoration: underline;
+      font-style: italic;
+      color: #3a2509;
+      font-size: 20px; }
+
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*POLÍTICA DE PRIVACIDAD*/
+/*header*/
+.main-privacidad {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  margin: 20px; }
+  .main-privacidad section ul li p .boton-mail {
+    text-decoration: underline;
+    font-style: italic;
+    color: #3a2509;
+    font-size: 20px; }
+
+header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
+  color: #9C5840;
+  text-align: center;
+  font-size: 50px;
+  padding: 45px 0px 45px 0px;
+  font-family: "Noto Serif", serif; }
+
+header #principal-index h2, header .header-pag-sec-destinos h2 {
+  color: #606C38;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0px 50px 0px;
+  font-family: "Cedarville Cursive", cursive; }
+
+header .header-comodidades h2, header .header-historia h2, header .header-destinos h2, header .header-reservas h2 {
+  font-size: 25px;
+  font-family: "Cedarville Cursive", cursive;
+  padding: 0px;
+  text-align: center;
+  color: #606C38; }
+
+header .header-comodidades, header .header-historia, header .header-destinos, header .header-reservas, header .header-pag-sec-destinos, header .header-politica-privacidad, header .header-contacto {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #cfaa87c0;
+  padding: 25px; }
+
+/*CONTACTO*/
+/*header*/
+/*main*/
+main .main-contacto {
+  padding: 50px 10px 120px 10px;
+  font-family: "Noto Serif", serif; }
+  main .main-contacto .boton-mail {
+    text-decoration: underline;
+    font-style: italic;
+    color: #3a2509;
+    font-size: 20px; }
+  main .main-contacto .boton-wpp {
+    text-decoration: underline;
+    font-style: italic;
+    color: #3a2509;
+    font-size: 20px; }
+
+/*MEDIA QUERIES*/
+/*Mq de Celulares Grandes*/
+@media screen and (min-width: 330px) {
+  footer .menu-final a {
+    font-size: 14px; }
+  footer .mensaje-fin {
+    font-size: 40px; } }
+
+/*Mq de Tablet*/
+@media screen and (min-width: 600px) {
+  header nav .menu-mobile {
+    display: none; }
+  header nav .menu-principal {
+    background-color: #323315;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 13px;
+    font-family: "Noto Serif", serif; }
+    header nav .menu-principal li {
+      height: 100%;
+      width: 100%;
+      text-align: center; }
+      header nav .menu-principal li a {
+        font-size: 17px;
+        color: #cfaa87c0;
+        text-decoration: none; }
+      header nav .menu-principal li .resaltaboton {
+        color: #9C5840; }
+      header nav .menu-principal li a:hover {
+        text-decoration: underline;
+        color: #9C5840; }
+  header nav .menu-principal-destinos {
+    background-color: #323315;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    list-style: none;
+    justify-content: space-between;
+    padding: 13px; }
+    header nav .menu-principal-destinos li {
+      height: 100%;
+      width: 100%;
+      font-size: 17px;
+      text-align: center;
+      font-family: "Noto Serif", serif; }
+      header nav .menu-principal-destinos li a {
+        color: #cfaa87c0;
+        text-decoration: none; }
+      header nav .menu-principal-destinos li .resaltaboton {
+        color: #9C5840; }
+      header nav .menu-principal-destinos li a:hover {
+        text-decoration: underline;
+        color: #9C5840; }
+  header #principal-index img {
+    height: 600px;
+    width: 700px; }
+  header #principal-index #titulo-uno {
+    font-size: 60px; }
+  header .header-comodidades .subtitulo-comodidades {
+    font-size: 24px; }
+  header .header-historia .subtitulo-historia {
+    font-size: 24px; }
+  header .header-destinos .subtitulo-destinos {
+    font-size: 24px; }
+  header .header-reservas .subtitulo-reservas {
+    font-size: 24px; }
+  header .header-pag-sec-destinos .subtitulo-pag-sec-destinos {
+    font-size: 24px; }
+  main .main-historia-izquierda {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr; }
+    main .main-historia-izquierda div div div img {
+      width: 300px;
+      height: 600px; }
+  main .main-historia-derecha {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr; }
+    main .main-historia-derecha div div div img {
+      width: 300px;
+      height: 600px; }
+    main .main-historia-derecha .carusel-desaparecer {
+      display: block; }
+  main .texto-izquierda-reservas {
+    font-family: 'Noto Serif', serif;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center; }
+    main .texto-izquierda-reservas .carusel-desaparecer {
+      display: block; }
+  main .texto-derecha-reservas {
+    font-family: 'Noto Serif', serif;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center; }
+    main .texto-derecha-reservas .carusel-desaparecer {
+      display: block; }
+  .main-index form .box-email {
+    margin-bottom: 15px; }
+  .main-index .img-principal div div .fotos-principales {
+    height: 700px;
+    width: 400px; }
+  .main-comodidades {
+    display: grid;
+    grid-template-columns: 21% 50% 21%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 0.5fr; }
+    .main-comodidades .carusel-desaparecer {
+      display: block; }
+    .main-comodidades .box-email-comodidades {
+      grid-column: 1/4; }
+    .main-comodidades .texto-comodidades-final {
+      grid-column: 1/4; }
+  .main-destinos .secciones-destinos .contenedor-destinos {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-items: center; }
+    .main-destinos .secciones-destinos .contenedor-destinos div div div img {
+      width: 300px;
+      height: 600px; }
+  footer .menu-final a {
+    font-size: 17px; }
+  .mensaje-fin {
+    font-size: 50px; } }
+
+/* MQ de desktop */
+@media screen and (min-width: 1024px) {
+  header nav .menu-mobile {
+    display: none; }
+  header nav .menu-principal {
+    background-color: #323315;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 16px;
+    font-family: "Noto Serif", serif; }
+    header nav .menu-principal li {
+      height: 100%;
+      width: 100%;
+      text-align: center; }
+      header nav .menu-principal li a {
+        font-size: 21px;
+        color: #cfaa87c0;
+        text-decoration: none; }
+      header nav .menu-principal li .resaltaboton {
+        color: #9C5840; }
+      header nav .menu-principal li a:hover {
+        text-decoration: underline;
+        color: #9C5840; }
+  header nav .menu-principal-destinos {
+    background-color: #323315;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    list-style: none;
+    justify-content: space-between;
+    padding: 16px; }
+    header nav .menu-principal-destinos li {
+      height: 100%;
+      width: 100%;
+      font-size: 21px;
+      text-align: center;
+      font-family: "Noto Serif", serif; }
+      header nav .menu-principal-destinos li a {
+        color: #cfaa87c0;
+        text-decoration: none; }
+      header nav .menu-principal-destinos li .resaltaboton {
+        color: #9C5840; }
+      header nav .menu-principal-destinos li a:hover {
+        text-decoration: underline;
+        color: #9C5840; }
+  header #principal-index img {
+    height: 600px;
+    width: 900px; }
+  header #principal-index #titulo-uno {
+    font-size: 70px; }
+  header .header-comodidades .subtitulo-comodidades {
+    font-size: 27px; }
+  header .header-historia .subtitulo-historia {
+    font-size: 27px; }
+  header .header-destinos .subtitulo-destinos {
+    font-size: 27px; }
+  header .header-reservas .subtitulo-reservas {
+    font-size: 27px; }
+  header .header-pag-sec-destinos .subtitulo-pag-sec-destinos {
+    font-size: 27px; }
+  main .main-historia-izquierda {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center; }
+    main .main-historia-izquierda div div div img {
+      width: 300px;
+      height: 600px; }
+  main .main-historia-derecha {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center; }
+    main .main-historia-derecha .carusel-desaparecer {
+      display: block; }
+    main .main-historia-derecha div div div img {
+      width: 300px;
+      height: 600px; }
+  main .texto-izquierda-reservas {
+    font-family: 'Noto Serif', serif;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center; }
+    main .texto-izquierda-reservas .carusel-desaparecer {
+      display: block; }
+  main .texto-derecha-reservas {
+    font-family: 'Noto Serif', serif;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center; }
+    main .texto-derecha-reservas .carusel-desaparecer {
+      display: block; }
+  .main-index .img-principal div div .fotos-principales {
+    width: 400px;
+    height: 700px; }
+  .main-index form .box-email {
+    margin-bottom: 15px; }
+  .main-comodidades {
+    display: grid;
+    grid-template-columns: 11% 70% 11%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    justify-content: center;
+    align-items: center; }
+    .main-comodidades .carusel-desaparecer {
+      display: block; }
+    .main-comodidades .box-email-comodidades {
+      grid-column: 1/4; }
+    .main-comodidades .texto-comodidades-final {
+      grid-column: 1/4; }
+  .main-destinos .secciones-destinos .resaltador {
+    font-size: 27px; }
+  .main-destinos .secciones-destinos .contenedor-destinos {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-items: center; }
+    .main-destinos .secciones-destinos .contenedor-destinos div div div img {
+      width: 300px;
+      height: 600px; }
+  footer .menu-final a {
+    font-size: 20px; }
+  footer .mensaje-fin {
+    font-size: 55px; } }

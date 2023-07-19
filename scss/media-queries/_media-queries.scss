@@ -1,0 +1,551 @@
+/*MEDIA QUERIES*/
+
+/*Mq de Celulares Grandes*/
+@media screen and(min-width:330px) {
+    footer{
+        .menu-final{
+            a{
+                font-size: 14px;
+            }
+        }
+
+        .mensaje-fin{
+            font-size: 40px;
+        }
+    }
+}
+
+/*Mq de Tablet*/
+
+@media screen and (min-width: 600px) {
+    header{ 
+        nav{
+            .menu-mobile{
+                display: none;
+            }
+
+                .menu-principal{
+                    background-color:nth($colores-principales , 7 );
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-rows: 1fr;
+                    list-style: none;
+                    justify-content: space-between;
+                    margin-bottom: 0px;
+                    padding: 13px;
+                    font-family: $fuente-principal;
+    
+                     li{
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+    
+                        a{
+                            font-size: 17px;
+                            color:nth($colores-principales, 3 ) ;
+                            text-decoration: none;
+                        }
+    
+                        .resaltaboton{
+                            color: nth($colores-principales, 1 );
+                        }
+        
+                        a:hover{
+                            text-decoration: underline;
+                            color: nth($colores-principales, 1 );
+                        }
+                    }
+                }
+            
+
+                .menu-principal-destinos{
+                    background-color:nth($colores-principales, 7 ) ;
+                    top: 0px;
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-rows: 1fr;
+                    list-style: none;
+                    justify-content: space-between;
+                    padding: 13px;
+        
+                    li{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 17px;
+                        text-align: center;
+                        font-family: $fuente-principal;
+        
+                        a{
+                            color:nth($colores-principales, 3 ) ;
+                            text-decoration: none;
+                        }
+        
+                        .resaltaboton{
+                            color: nth($colores-principales, 1 );
+                        }
+        
+                        a:hover{
+                            text-decoration: underline;
+                            color: nth($colores-principales, 1 );
+                        }
+                    }
+                }
+        } 
+
+        #principal-index{
+            img{
+                height: 600px;
+                width: 700px;
+            }
+
+            #titulo-uno{
+                font-size : 60px;
+            }
+        }
+
+        .header-comodidades{
+            .subtitulo-comodidades{
+                font-size: 24px;
+            }
+        }
+
+        .header-historia{
+            .subtitulo-historia{
+                font-size: 24px;
+            }
+        }
+
+        .header-destinos{
+            .subtitulo-destinos{
+                font-size: 24px;
+            }
+        }
+
+        .header-reservas{
+            .subtitulo-reservas{
+                font-size: 24px;
+            }
+        }
+
+        .header-pag-sec-destinos{
+            .subtitulo-pag-sec-destinos{
+                font-size: 24px;
+            }
+        }
+    }
+
+    main{
+
+        .main-historia-izquierda{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr;
+
+            div{
+                div{
+                    div{
+                        img{
+                            width: 300px;
+                            height: 600px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .main-historia-derecha{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr;
+
+            div{
+                div{
+                    div{
+                        img{
+                            width: 300px;
+                            height: 600px;
+                        }
+                    }
+                }
+            }
+
+            .carusel-desaparecer{
+                display: block;
+            }
+        }
+
+        
+        .texto-izquierda-reservas{
+            font-family: 'Noto Serif', serif;
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr;
+            grid-template-rows: 1fr;
+            padding: 5px;
+            margin-top: 10px;
+                text-align: center;
+                align-items: center;
+
+            .carusel-desaparecer{
+                display: block;
+            }
+        }
+            
+        .texto-derecha-reservas{
+            font-family:'Noto Serif', serif ;
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr;
+            grid-template-rows: 1fr;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: center;
+            align-items: center;
+
+            .carusel-desaparecer{
+                display: block;
+            }
+        }
+    }
+      
+    .main-index{
+        form{
+            .box-email{
+                margin-bottom: 15px;
+            }
+        }
+
+        .img-principal{
+            div{
+                div{
+                    .fotos-principales{
+                        height: 700px;
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-comodidades{
+        display: grid;
+        grid-template-columns: 21% 50% 21%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+
+        .carusel-desaparecer{
+            display: block;
+        }
+
+        .box-email-comodidades{
+            grid-column: 1/4;
+        }
+
+        .texto-comodidades-final{
+            grid-column: 1/4;
+        }
+    }
+
+    .main-destinos{
+        .secciones-destinos{
+            .contenedor-destinos{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 1fr;
+                justify-self: center;
+                align-items: center;
+
+                div{
+                    div{
+                        div{
+                            img{
+                                width: 300px;
+                                height: 600px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .menu-final{
+            a{
+            font-size: 17px;
+            }
+        }
+    }
+    .mensaje-fin{
+        font-size: 50px;
+    }
+}
+
+/* MQ de desktop */
+
+@media screen and (min-width:1024px) {
+    header {
+        nav{
+            .menu-mobile{
+                display: none;
+            }
+
+            .menu-principal{
+                background-color:nth($colores-principales , 7 );
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 1fr;
+                list-style: none;
+                justify-content: space-between;
+                margin-bottom: 0px;
+                padding: 16px;
+                font-family: $fuente-principal;
+
+                 li{
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+
+                    a{
+                        font-size: 21px;
+                        color:nth($colores-principales, 3 ) ;
+                        text-decoration: none;
+                    }
+
+                    .resaltaboton{
+                        color: nth($colores-principales, 1 );
+                    }
+    
+                    a:hover{
+                        text-decoration: underline;
+                        color: nth($colores-principales, 1 );
+                    }
+                }
+            }
+
+            .menu-principal-destinos{
+                background-color:nth($colores-principales, 7 ) ;
+                top: 0px;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 1fr;
+                list-style: none;
+                justify-content: space-between;
+                padding: 16px;
+    
+                li{
+                    height: 100%;
+                    width: 100%;
+                    font-size: 21px;
+                    text-align: center;
+                    font-family: $fuente-principal;
+    
+                    a{
+                        color:nth($colores-principales, 3 ) ;
+                        text-decoration: none;
+                    }
+    
+                    .resaltaboton{
+                        color: nth($colores-principales, 1 );
+                    }
+    
+                    a:hover{
+                        text-decoration: underline;
+                        color: nth($colores-principales, 1 );
+                    }
+                }
+            }
+        }
+
+        #principal-index{
+            img{
+                height: 600px;
+                width: 900px;
+            }
+
+            #titulo-uno{
+                font-size: 70px;
+            }
+        }
+
+        .header-comodidades{
+            .subtitulo-comodidades{
+                font-size: 27px;
+            }
+        }
+
+        .header-historia{
+            .subtitulo-historia{
+                font-size: 27px;
+            }
+        }
+
+        .header-destinos{
+            .subtitulo-destinos{
+                font-size: 27px;
+            }
+        }
+
+        .header-reservas{
+            .subtitulo-reservas{
+                font-size: 27px;
+            }
+        }
+
+        .header-pag-sec-destinos{
+            .subtitulo-pag-sec-destinos{
+                font-size: 27px;
+            }
+        }
+    }
+
+    main{
+
+        .main-historia-izquierda{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+
+            div{
+                div{
+                    div{
+                        img{
+                            width: 300px;
+                            height: 600px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .main-historia-derecha{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+
+            .carusel-desaparecer{
+                display: block;
+            }
+
+            div{
+                div{
+                    div{
+                        img{
+                            width: 300px;
+                            height: 600px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+        .texto-izquierda-reservas{
+            font-family: 'Noto Serif', serif;
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr;
+            grid-template-rows: 1fr;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: center;
+            align-items: center;
+
+            .carusel-desaparecer{
+                display: block;
+            }
+        }
+            
+        .texto-derecha-reservas{
+            font-family:'Noto Serif', serif ;
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr;
+            grid-template-rows: 1fr;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: center;
+            align-items: center;
+
+            .carusel-desaparecer{
+                display: block;
+            }
+        }
+    } 
+    
+    .main-index{
+        .img-principal{
+            div{
+                div{
+                    .fotos-principales{
+                        width: 400px;
+                        height: 700px;
+                    }
+                }
+            }
+        }
+
+        form{
+            .box-email{
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .main-comodidades{
+        display: grid;
+        grid-template-columns: 11% 70% 11%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+        justify-content: center;
+        align-items: center;
+
+        .carusel-desaparecer{
+            display: block;
+        }
+
+        .box-email-comodidades{
+            grid-column: 1/4;
+        }
+
+        .texto-comodidades-final{
+            grid-column: 1/4;
+        }
+    }
+
+    .main-destinos{
+        .secciones-destinos{
+            .resaltador{
+                font-size: 27px;
+            }
+            .contenedor-destinos{
+                display: grid;
+                grid-template-columns: 60% 40%;
+                grid-template-rows: 1fr;
+                justify-self: center;
+                align-items: center;
+
+                div{
+                    div{
+                        div{
+                            img{
+                                width: 300px;
+                                height: 600px;
+                            }
+                        }
+                    }
+                }
+            }
+        }      
+    }
+
+
+
+    footer{
+        .menu-final a{
+            font-size: 20px;
+        }
+
+        .mensaje-fin{
+            font-size:55px;
+        }
+    }
+}

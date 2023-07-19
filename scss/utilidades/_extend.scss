@@ -1,0 +1,45 @@
+@import "listas.scss";
+@import "variables.scss";
+
+// EXTEND
+
+// Extend para los H1
+
+%estilos-titulo{
+    color:nth($colores-principales, 1 );
+    text-align: center;
+    font-size: 50px;
+    padding: 45px 0px 45px 0px;
+    font-family: $fuente-principal;
+}
+
+// Extend para el h2 principal
+
+%estilos-subtitulo{
+    color:nth($colores-principales, 8 );
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0px 50px 0px;
+    font-family: $fuente-secundaria;
+}
+
+// Extend para los h2 generales
+
+%estilos-subtitulos-generales{
+    font-size: 25px;
+    font-family: $fuente-secundaria;
+    padding: 0px;
+    text-align: center;
+    color:nth($colores-principales, 8 );
+}
+
+// Extend para los header
+
+%estilos-header{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
+    background-color: nth($colores-principales, 3);
+    padding: 25px ;
+}

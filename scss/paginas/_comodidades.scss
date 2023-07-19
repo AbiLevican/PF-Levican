@@ -1,0 +1,94 @@
+/*COMODIDADES*/
+
+// import de utilidades
+@import "../utilidades/extend";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*header comodidades*/
+
+header{
+    .header-comodidades{
+        @extend %estilos-header;
+
+        h1{
+            @extend %estilos-titulo;
+        }
+
+        h2{
+            @extend %estilos-subtitulos-generales;
+        }
+    }  
+}
+
+
+/*main comodidades*/
+
+.main-comodidades{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 8) repeat(0.5fr, 2);
+    gap: 10px;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-comodidades{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        padding: 5px;
+        height: 250px;
+        width: 200px;
+    }
+
+    .carusel-desaparecer{
+        display: none;
+    }
+
+    .texto-comodidades{
+        font-family:$fuente-principal ;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .texto-comodidades-final{
+        font-family:  $fuente-principal;
+        text-align: center;
+        color: nth($colores-principales, 8 );
+    }
+
+    .box-email-comodidades{
+        background-color: nth($colores-principales, 4 );
+        border: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px 40px 10px 40px;
+        margin: 20px ;
+        justify-self: center;
+
+        .box-email-espacio-comodidades{
+        color: nth($colores-principales, 7 );
+        font-family: $fuente-principal;
+        padding: 5px;
+        margin: 3px ;
+        }
+
+        .box-email-boton-comodidades{
+            background-color:nth($colores-principales, 7 );
+            border: 0px;
+            padding: 10px ;
+            margin: 3px 70px 3px 70px;
+            font-family: $fuente-principal;
+            color: nth($colores-principales, 4 );
+        }
+
+        .box-email-boton-comodidades:hover{
+            text-decoration: underline;
+        }
+    }
+}

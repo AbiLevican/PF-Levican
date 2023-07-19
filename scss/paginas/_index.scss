@@ -1,0 +1,225 @@
+/* INDEX*/
+
+// import de utilidades
+@import "../utilidades/extend";
+@import "../utilidades/listas";
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+
+/*header*/
+header{
+    nav{
+        .menu-principal{
+            display: none;
+        }
+
+        .menu-mobile{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            background-color:nth($colores-principales , 7 );
+            margin-bottom: 0px;
+            padding: 13px;
+            font-family: $fuente-principal;
+
+             li{
+                height: 100%;
+                width: 100%;
+                text-align: start;
+            }
+    
+            a{
+                font-size: 17px;
+                color:nth($colores-principales, 3 ) ;
+                text-decoration: none;
+                text-align: start;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                color: nth($colores-principales, 1 );
+            }
+
+            .menu-desplegable{
+                position: absolute;
+                display: none;
+                list-style: none;
+                background-color:nth($colores-principales , 7 );
+                margin-bottom: 0px;
+                padding: 13px;
+                font-family: $fuente-principal;
+            }
+
+            li:hover{
+                .menu-desplegable{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #principal-index{
+        background-color:nth($colores-principales, 3) ;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 50% 25%;
+        justify-items: center;
+        align-items: center;
+        font-family: $fuente-principal;
+
+        img{
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            width:100%;
+        }
+        
+        h1{
+            @extend %estilos-titulo
+        }
+        
+        #titulo-uno{
+            padding: 45px 0px 20px 0px;
+        }
+        
+        h2{
+            @extend %estilos-subtitulo;
+        }
+    }
+}
+
+
+/* main del index */
+
+.main-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 25%) ;
+    justify-items: center;
+    align-items: center;
+
+    #duenios{
+        text-align: center;
+        font-size: 18px;
+        color: nth($colores-principales, 7 );
+        font-family: $fuente-principal;
+    }
+
+    .img-principal{
+        div{
+            div{
+                 .fotos-principales{
+                    width: 100%;
+                }
+            }
+        }
+    }
+   
+
+    .box-email{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        background-color: nth($colores-principales, 1 );
+        padding: 20px 25px 20px 25px;
+        gap: 5px;
+        justify-content: center;
+
+        .box-email-text{
+            color: nth($colores-principales, 2 );
+            font-size: 20px;
+            text-align: center;
+            font-family: $fuente-principal;
+        }
+        
+        .espacio-email-box{
+            color: nth($colores-principales, 7 );
+            font-family: $fuente-principal;
+            padding: 5px 10px 5px 10px;
+        }
+        
+        .boton-email-box{
+            background-color: nth($colores-principales, 7 );
+            border: 0px;
+            padding: 10px 0px 10px 0px ;
+            margin: 10px 30px 20px 30px;
+            font-family: $fuente-principal;
+            color: nth($colores-principales, 4);
+        }
+        
+        .boton-email-box:hover{
+            text-decoration: underline;
+            background-color:nth($colores-principales, 6 ) ;
+        }   
+    }
+
+    
+    section{
+        p{
+            color: black;
+            text-align: center;
+            font-size: 17px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-family: $fuente-principal;
+            padding: 5px;
+        }
+    }
+    
+}
+
+/*footer*/
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 50% 25%;
+    background-color:nth($colores-principales, 7 );
+    font-family: $fuente-principal;
+
+    .menu-final{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    padding: 14px;
+
+        a{
+            color: nth($colores-principales, 4 );
+            text-decoration: none;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: nth($colores-principales, 2 );
+        }
+    } 
+
+    .mensaje-fin{
+        padding: 60px 0px 60px 0px;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 37px;
+    }
+
+    .mensaje-copyright{
+        color: whitesmoke;
+        text-align: center;
+        padding: 0px 0px 50px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

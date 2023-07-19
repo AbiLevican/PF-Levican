@@ -1,0 +1,68 @@
+// import de utiidades
+@import "../utilidades/extend";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*DESTINOS*/
+
+/*header*/
+
+header{
+    .header-destinos{
+        @extend %estilos-header;
+
+        h1{
+            @extend %estilos-titulo;
+        }
+
+        h2{
+            @extend %estilos-subtitulos-generales;
+        }
+    }
+}
+
+/*main destinos*/
+
+.main-destinos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    .secciones-destinos{
+
+        .contenedor-destinos{
+
+            img{
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            }
+
+            p{
+                font-family:$fuente-principal;
+                margin: 30px 5px 10px 5px; 
+            }
+        }
+
+        .resaltador{
+        background-color: nth($colores-principales, 1 );
+        color: nth($colores-principales, 2 );
+        font-size: 22px;
+        font-family:$fuente-principal;
+        padding: 30px;
+        }
+
+        .boton-mas-info{
+            text-decoration: none;
+            color: nth($colores-principales, 2 );
+            background-color: nth($colores-principales, 7 );
+            margin: 10px;
+            padding: 20px;
+            font-family: $fuente-principal;
+        }
+
+        .boton-mas-info:hover{
+            text-decoration: underline;
+        }
+    }
+}

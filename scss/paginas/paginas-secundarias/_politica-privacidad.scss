@@ -1,0 +1,37 @@
+// import de utilidades
+@import "../../utilidades/extend";
+@import "../../utilidades/listas";
+@import "../../utilidades/mixin";
+@import "../../utilidades/variables";
+
+/*POLÍTICA DE PRIVACIDAD*/
+
+/*header*/
+
+header{
+    .header-politica-privacidad{
+        @extend %estilos-header;
+    }
+    h1{
+        @extend %estilos-titulo
+    }
+}
+
+
+.main-privacidad{
+    font-family: $fuente-principal;
+    text-align: center;
+    margin: 20px;
+
+    section{
+        ul{
+            li{
+                p{
+                    .boton-mail{
+                        @include propiedades-boton;
+                    }
+                }
+            }
+        }
+    }
+}
