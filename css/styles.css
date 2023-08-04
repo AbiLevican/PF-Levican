@@ -1,11 +1,10 @@
 @charset "UTF-8";
-/*reseteo*/
+/* INDEX*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* INDEX*/
 header #principal-index h1, header .header-comodidades h1, header .header-historia h1, header .header-destinos h1, header .header-reservas h1, header .header-pag-sec-destinos h1, header h1, header .header-contacto h1 {
   color: #9C5840;
   text-align: center;
@@ -36,39 +35,19 @@ header .header-comodidades, header .header-historia, header .header-destinos, he
   padding: 25px; }
 
 /*header*/
-header nav .menu-principal {
-  display: none; }
-
-header nav .menu-mobile {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+header .menu-principal {
   background-color: #323315;
-  margin-bottom: 0px;
-  padding: 13px;
   font-family: "Noto Serif", serif; }
-  header nav .menu-mobile li {
-    height: 100%;
-    width: 100%;
-    text-align: start; }
-  header nav .menu-mobile a {
-    font-size: 17px;
+  header .menu-principal #titulo-menu {
+    font-family: "Noto Serif", serif;
+    color: #9C5840;
+    font-size: 19px; }
+  header .menu-principal #items-menu {
     color: #cfaa87c0;
-    text-decoration: none;
-    text-align: start; }
-  header nav .menu-mobile a:hover {
+    font-size: 17px; }
+  header .menu-principal #items-menu:hover {
     text-decoration: underline;
     color: #9C5840; }
-  header nav .menu-mobile .menu-desplegable {
-    position: absolute;
-    display: none;
-    list-style: none;
-    background-color: #323315;
-    margin-bottom: 0px;
-    padding: 13px;
-    font-family: "Noto Serif", serif; }
-  header nav .menu-mobile li:hover .menu-desplegable {
-    display: block; }
 
 header #principal-index {
   background-color: #cfaa87c0;
@@ -152,7 +131,7 @@ footer {
       color: #b69c64;
       text-decoration: none;
       text-align: center;
-      font-size: 12px; }
+      font-size: 11px; }
     footer .menu-final a:hover {
       text-decoration: underline;
       color: #cfaa87; }
@@ -352,7 +331,8 @@ header .header-comodidades, header .header-historia, header .header-destinos, he
   grid-template-rows: repeat(4, 1fr); }
   .main-destinos .secciones-destinos .contenedor-destinos p {
     font-family: "Noto Serif", serif;
-    margin: 30px 5px 10px 5px; }
+    margin: 30px 5px 10px 5px;
+    text-align: center; }
   .main-destinos .secciones-destinos .contenedor-destinos div div div img {
     width: 100%; }
   .main-destinos .secciones-destinos .resaltador {
@@ -466,42 +446,6 @@ header .header-comodidades, header .header-historia, header .header-destinos, he
 
 /*PAGINAS SECUNDARIAS VIAJES*/
 /*header*/
-header nav .menu-principal-destinos {
-  display: none; }
-
-header nav .menu-mobile {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  background-color: #323315;
-  margin-bottom: 0px;
-  padding: 13px;
-  font-family: "Noto Serif", serif; }
-  header nav .menu-mobile li {
-    height: 100%;
-    width: 100%;
-    text-align: start; }
-    header nav .menu-mobile li a {
-      font-size: 17px;
-      color: #cfaa87c0;
-      text-decoration: none;
-      text-align: start; }
-    header nav .menu-mobile li .resaltaboton {
-      color: #9C5840; }
-    header nav .menu-mobile li a:hover {
-      text-decoration: underline;
-      color: #9C5840; }
-  header nav .menu-mobile .menu-desplegable {
-    position: absolute;
-    display: none;
-    list-style: none;
-    background-color: #323315;
-    margin-bottom: 0px;
-    padding: 13px;
-    font-family: "Noto Serif", serif; }
-  header nav .menu-mobile li:hover .menu-desplegable {
-    display: block; }
-
 /*main*/
 .main-pag-sec-destinos {
   display: grid;
@@ -691,8 +635,7 @@ main .main-contacto {
         text-decoration: underline;
         color: #9C5840; }
   header #principal-index img {
-    height: 600px;
-    width: 700px; }
+    width: 100%; }
   header #principal-index #titulo-uno {
     font-size: 60px; }
   header .header-comodidades .subtitulo-comodidades {
@@ -843,6 +786,9 @@ main .main-contacto {
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center; }
+    main .main-historia-izquierda .texto-historia {
+      margin: 20px 100px 20px 100px;
+      font-size: 19px; }
     main .main-historia-izquierda div div div img {
       width: 300px;
       height: 600px; }
@@ -854,9 +800,14 @@ main .main-contacto {
     align-items: center; }
     main .main-historia-derecha .carusel-desaparecer {
       display: block; }
+    main .main-historia-derecha .texto-historia {
+      margin: 20px 100px 20px 100px;
+      font-size: 19px; }
     main .main-historia-derecha div div div img {
       width: 300px;
       height: 600px; }
+  main .texto-historia-final {
+    font-size: 19px; }
   main .texto-izquierda-reservas {
     font-family: 'Noto Serif', serif;
     display: grid;
@@ -866,6 +817,9 @@ main .main-contacto {
     margin-top: 10px;
     text-align: center;
     align-items: center; }
+    main .texto-izquierda-reservas p {
+      font-size: 19px;
+      margin: 20px 50px 20px 50px; }
     main .texto-izquierda-reservas .carusel-desaparecer {
       display: block; }
   main .texto-derecha-reservas {
@@ -877,8 +831,16 @@ main .main-contacto {
     margin-top: 10px;
     text-align: center;
     align-items: center; }
+    main .texto-derecha-reservas p {
+      font-size: 19px;
+      margin: 20px 50px 20px 50px; }
     main .texto-derecha-reservas .carusel-desaparecer {
       display: block; }
+  .main-index section p {
+    margin: 20px 100px 20px 100px;
+    font-size: 20px; }
+  .main-index #duenios {
+    font-size: 20px; }
   .main-index .img-principal div div .fotos-principales {
     width: 400px;
     height: 700px; }
@@ -890,23 +852,31 @@ main .main-contacto {
     grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
     justify-content: center;
     align-items: center; }
+    .main-comodidades .texto-comodidades {
+      font-size: 19px; }
     .main-comodidades .carusel-desaparecer {
       display: block; }
     .main-comodidades .box-email-comodidades {
       grid-column: 1/4; }
     .main-comodidades .texto-comodidades-final {
-      grid-column: 1/4; }
-  .main-destinos .secciones-destinos .resaltador {
-    font-size: 27px; }
-  .main-destinos .secciones-destinos .contenedor-destinos {
-    display: grid;
-    grid-template-columns: 65% 33%;
-    grid-template-rows: 1fr;
-    justify-self: center;
-    align-items: center; }
-    .main-destinos .secciones-destinos .contenedor-destinos div div div img {
-      width: 300px;
-      height: 600px; }
+      grid-column: 1/4;
+      font-size: 19px; }
+  .main-destinos .secciones-destinos {
+    margin-bottom: 50px; }
+    .main-destinos .secciones-destinos .resaltador {
+      font-size: 27px; }
+    .main-destinos .secciones-destinos .contenedor-destinos {
+      display: grid;
+      grid-template-columns: 65% 33%;
+      grid-template-rows: 1fr;
+      justify-self: center;
+      align-items: center; }
+      .main-destinos .secciones-destinos .contenedor-destinos p {
+        margin: 20px 100px 20px 100px;
+        font-size: 19px; }
+      .main-destinos .secciones-destinos .contenedor-destinos div div div img {
+        width: 300px;
+        height: 600px; }
   footer .menu-final a {
     font-size: 20px; }
   footer .mensaje-fin {

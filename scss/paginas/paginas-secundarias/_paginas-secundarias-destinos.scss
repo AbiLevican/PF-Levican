@@ -8,62 +8,6 @@
 
 /*header*/
 header{
-    nav{
-        .menu-principal-destinos{
-            display: none;
-        }
-
-        .menu-mobile{
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-            background-color:nth($colores-principales , 7 );
-            margin-bottom: 0px;
-            padding: 13px;
-            font-family: $fuente-principal;
-
-             li{
-                height: 100%;
-                width: 100%;
-                text-align: start;
-           
-    
-                a{
-                font-size: 17px;
-                color:nth($colores-principales, 3 ) ;
-                text-decoration: none;
-                text-align: start;   
-                }
-
-                .resaltaboton{
-                    color: nth($colores-principales, 1 );
-                }
-
-                a:hover{
-                    text-decoration: underline;
-                    color: nth($colores-principales, 1 );
-                }
-            }
-
-            .menu-desplegable{
-                position: absolute;
-                display: none;
-                list-style: none;
-                background-color:nth($colores-principales , 7 );
-                margin-bottom: 0px;
-                padding: 13px;
-                font-family: $fuente-principal;
-            }
-
-            li:hover{
-                .menu-desplegable{
-                    display: block;
-                }
-            }
-        }
-    }     
-
-    
     .header-pag-sec-destinos{
         @extend %estilos-header;
 
